@@ -1,0 +1,49 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	line-height: 45px;
+}
+.box{
+	widows: 100%;
+	height: 45px;
+	background: #363636;
+}
+.bj{
+	width: 1240px;
+	height: 45px;
+	display: flex;
+	position: relative;
+	margin-left:180px ;
+}
+.left{
+	width: 820px;
+	height: 45px;
+	display: flex;
+	justify-content: space-around;
+}
+a{
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+.right{
+	width: 270px;
+	height: 45px;
+	position:absolute ;
+	right: 0px;
+	display: flex;
+	justify-content: space-around;
+}
+.neo{
+	width: 90px;
+	height: 45px;
+	text-align: center;
+}
+.neo:hover{
+	background: #f00;
+}
+.swiper{
+	width: 1240px;
+	height: 330px;
+}

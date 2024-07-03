@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ys.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<div class="bj">
+				<div class="left">
+					<a href="" class="cd">电脑办公 </a>
+					<a href="" class="cd">平面设计</a>
+					<a href="" class="cd">室内设计</a>
+					<a href="" class="cd">机械设计</a>
+					<a href="" class="cd">室外设计</a>
+					<a href="" class="cd">工业自动化</a>
+					<a href="" class="cd">影视动画</a>
+					<a href="" class="cd">程序开发</a>
+					<a href="" class="cd">网页设计</a>
+					<a href="" class="cd">会计课程 </a>
+					<a href="" class="cd">兴趣成长</a>
+				</div>
+				<div class="right">
+					<div class="neo"><p><a href="">首页</a></p></div>
+					<div class="neo"><p><a href="">商城</a></p></div>
+					<div class="neo"><p><a href="">手机app</a></p></div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/2.jpg"/></div>
+        <div class="swiper-slide"><img src="img/4.jpg"/></div>
+        <div class="swiper-slide"><img src="img/5.jpg"/></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+<script src="js/swiper-bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var cd=document.getElementsByClassName('cd')
+			console.log(cd)
+			for (var i=0;i<cd.length;i++) {
+				cd[i].onmouseover=function(){
+					console.log('ccccc')
+					this.style.color='blue';
+				}
+			}
+			for (var i=0;i<cd.length;i++) {
+				cd[i].onmouseout=function(){
+					this.style.color="#fff";
+				}
+			}
+		</script>
+		<script>        
+  var mySwiper = new Swiper ('.swiper', {
+    autoplay: true, // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })        
+  </script>
+	</body>
+</html>
